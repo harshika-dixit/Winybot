@@ -1,0 +1,23 @@
+{
+  "features": [
+    "intent_greet",
+    "intent_help",
+    "intent_goodbye",
+    "intent_inform",
+    "intent_get_price",
+    "intent_get_country",
+    "intent_get_rating",
+    "entity_Variety",
+    "slot_Variety_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_greet",
+    "prev_action_help",
+    "prev_utter_goodbye",
+    "prev_utter_ask_Variety",
+    "prev_action_variety",
+    "prev_action_price",
+    "prev_action_country",
+    "prev_action_rating"
+  ]
+}

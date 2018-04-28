@@ -1,0 +1,54 @@
+action_factory: null
+action_names:
+- utter_greet
+- action_help
+- utter_goodbye
+- utter_ask_Variety
+- action_variety
+- action_price
+- action_country
+- action_rating
+actions:
+- utter_greet
+- actions.ActionHelp
+- utter_goodbye
+- utter_ask_Variety
+- actions.ActionVariety
+- actions.ActionPrice
+- actions.ActionCountry
+- actions.ActionRating
+config:
+  store_entities_as_slots: true
+entities:
+- Variety
+intents:
+- greet
+- help
+- goodbye
+- inform
+- get_price
+- get_country
+- get_rating
+slots:
+  Variety:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_Variety:
+  - text: For which wine?
+  - text: Do you have some variety in mind?
+  - text: Alright! Which variety shall I bring up?
+  - text: Sure! What wine are you looking for?
+  utter_goodbye:
+  - text: Talk to you later
+  - text: Bye bye :(
+  - text: Talk to you soon
+  utter_greet:
+  - text: Hello! How can I help?
+  - text: Hi there! What can I do for you?
+  - text: Winy here! How can I help?
+  utter_help:
+  - text: 'Hello, my name is Winy! I can give you details about wine. You can ask
+      me the price, country and description of any wine. Here are some you can choose
+      from:'
+topics: []
